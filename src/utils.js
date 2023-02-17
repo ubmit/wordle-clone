@@ -13,3 +13,9 @@ export const range = (start, end, step = 1) => {
   }
   return output;
 };
+
+export const cx = (...args) =>
+  args
+    .flat()
+    .filter((x) => x !== null && x !== undefined && typeof x !== 'boolean')
+    .join(' ');

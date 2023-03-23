@@ -10,7 +10,7 @@ import { WORDS } from '../../data';
 import { NUM_OF_GUESSES_ALLOWED } from '../../constants';
 
 const answer = sample(WORDS);
-console.log('💡', { answer });
+console.log({ answer });
 
 function Game() {
   const [guesses, setGuesses] = useState([]);
